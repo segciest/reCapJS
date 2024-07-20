@@ -1,0 +1,66 @@
+//Base
+@import "./base/reset";
+
+.product {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 40px;
+    .productItem {
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+          rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+          rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+          rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        transform: scale(1.1);
+      }
+      .productImg {
+        img {
+        }
+      }
+      .productName {
+      }
+
+      .productMore {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        .buy {
+          text-align: center;
+          .buyNowBtn {
+            width: 100%;
+          }
+        }
+        .price {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            margin-bottom: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  #carouselExampleFade {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 100%;
+          height: 620px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+}

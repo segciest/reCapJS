@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.product {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.product .product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 40px;
+}
+.product .product-container .productItem {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.product .product-container .productItem:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  transform: scale(1.1);
+}
+.product .product-container .productItem .productMore {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+.product .product-container .productItem .productMore .buy {
+  text-align: center;
+}
+.product .product-container .productItem .productMore .buy .buyNowBtn {
+  width: 100%;
+}
+.product .product-container .productItem .productMore .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product .product-container .productItem .productMore .price p {
+  margin-bottom: unset;
+}
+
+.banner #carouselExampleFade .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 620px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=index.css.map */
